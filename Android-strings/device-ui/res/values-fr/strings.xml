@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="ok">OK</string>
-    <string name="save">Enregistrer</string>
-    <string name="create">Créez à nouveau pour le test</string>
+    <string name="save">enregistrer</string>
+    <string name="create">créez à nouveau pour le test avec le token mis à jour</string>
 </resources>
