@@ -2,5 +2,5 @@
 <resources>
     <string name="ok">Okay</string>
     <string name="save">Speichern</string>
-    <string name="create">Für verschiedene Sprachen erneut erstellen</string>
+    <string name="create">Erstellen Sie erneut für verschiedene Sprachen für die Sprachzuordnung</string>
 </resources>
