@@ -1,0 +1,26 @@
+{
+  "name": "John Doe",
+  "age": 30,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345"
+  },
+  "phoneNumbers": [
+    {
+      "type": "casa",
+      "number": "555-1234"
+    },
+    {
+      "type": "lavoro",
+      "number": "555-5678"
+    }
+  ],
+  "email": "johndoe@example.com",
+  "favoriteBooks": [
+    "Per uccidere un Mockingbird",
+    "1984",
+    "Il grande Gatsby"
+  ]
+}
