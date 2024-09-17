@@ -1,0 +1,12 @@
+{
+  "welcome_message": "Willkommen zurück auf unserer Website!",
+  "login_prompt": "Melden Sie sich an, um fortzufahren.",
+  "logout_message": "Sie wurden erfolgreich abgemeldet.",
+  "error_message": "Hoppla! Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+  "success_message": "Ihre Aktion war erfolgreich.",
+  "loading_message": "Laden, bitte warten...",
+  "no_results": "Keine Ergebnisse gefunden.",
+  "form_submit": "Ihr Formular wurde weitergeleitet.",
+  "contact_info": "Kontaktieren Sie uns unter info@example.com.",
+  "privacy_policy": "Weitere Informationen finden Sie in unseren Datenschutzrichtlinien."
+}
