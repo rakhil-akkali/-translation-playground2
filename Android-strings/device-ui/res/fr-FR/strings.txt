@@ -1,0 +1,6 @@
+<?xml version="1,0" encoding="utf-8"?>
+<resources>
+    <string name="ok"> Ok</string>
+    <string name="save"> Save</string>
+    <string name="create the change for language code test">create le changement pour le test de code de langue once</string>
+</resources>
