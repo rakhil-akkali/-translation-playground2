@@ -2,7 +2,7 @@
   "welcome_message": "Welcome to our website!",
   "login_prompt": "Please log in to continue.",
   "logout_message": "You have been logged out successfully.",
-  "error_message": "Oops! Something went wrong. Please try again.",
+  "error_message": "Oops! Something went wrong. Please try again and again.",
   "success_message": "Your action was successful.",
   "loading_message": "Loading, please wait...",
   "no_results": "No results found.",
