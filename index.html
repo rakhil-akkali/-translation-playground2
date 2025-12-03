@@ -54,6 +54,33 @@
 
     .hero .page { padding-bottom: 0; }
 
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 0 24px;
+      gap: 16px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+
+    .link {
+      font-weight: 600;
+      color: rgba(247, 246, 251, 0.92);
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      transition: border 0.2s ease, background 0.2s ease;
+    }
+
+    .link:hover { border-color: rgba(255,255,255,0.35); background: rgba(255,255,255,0.06); }
+
     .hero-grid {
       display: grid;
       grid-template-columns: 1.08fr 0.92fr;
@@ -134,6 +161,7 @@
       cursor: pointer;
       transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
       font-size: 16px;
+      text-decoration: none;
     }
 
     .btn-primary {
@@ -168,6 +196,24 @@
       border-radius: 14px;
       font-weight: 600;
       color: #f7f6fb;
+      backdrop-filter: blur(6px);
+    }
+
+    .spotlight {
+      position: absolute;
+      inset: -12% -14% 8% -14%;
+      background: radial-gradient(circle at 45% 35%, rgba(252, 192, 45, 0.32), rgba(108, 77, 246, 0.16) 50%, transparent 70%);
+      filter: blur(22px);
+      z-index: -1;
+    }
+
+    .image-caption {
+      margin-top: 10px;
+      color: rgba(247, 246, 251, 0.85);
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      text-align: right;
     }
 
     .section {
@@ -322,6 +368,7 @@
       .hero { padding: 56px 18px 72px; }
       .hero-grid { grid-template-columns: 1fr; }
       .hero-ctas { flex-direction: column; align-items: flex-start; }
+      .topbar { flex-direction: column; align-items: flex-start; }
       .survey-banner { flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -329,9 +376,17 @@
 <body>
   <header class="hero">
     <div class="page">
+      <nav class="topbar">
+        <div class="brand">⭐ JODA</div>
+        <div class="nav-actions">
+          <a class="link" href="#community">Community</a>
+          <a class="link" href="#benefits">Benefits</a>
+          <a class="btn btn-primary" href="#waitlist">👉 Get Early Access</a>
+        </div>
+      </nav>
       <div class="hero-grid">
         <div class="hero-copy">
-          <div class="tagline">⭐ JODA · Where Fashion Finds Its Match</div>
+          <div class="tagline">Where Fashion Finds Its Match</div>
           <h1>Wear. Share. Match.</h1>
           <p class="subhead">Discover India’s first community-driven digital wardrobe — where you can digitize your closet, share or rent styles, and find your perfect fashion match.</p>
           <div class="hero-ctas">
@@ -339,13 +394,15 @@
             <a class="btn btn-secondary" href="#explainer">🎥 Watch Explainer Video</a>
           </div>
           <div class="badges">
-            <div class="badge">2,000+ early sign-ups</div>
-            <div class="badge">Built for trusted communities</div>
-            <div class="badge">Circular fashion movement</div>
+            <div class="badge"><span>⚡</span><span>2,000+ early sign-ups</span></div>
+            <div class="badge"><span>🤝</span><span>Built for trusted communities</span></div>
+            <div class="badge"><span>♻️</span><span>Circular fashion movement</span></div>
           </div>
         </div>
         <div class="hero-visual">
+          <div class="spotlight"></div>
           <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="A woman wearing a traditional Indian wedding lehenga, smiling with soft lighting." />
+          <div class="image-caption">Shot on location · Celebrating Indian bridal elegance</div>
         </div>
       </div>
     </div>
