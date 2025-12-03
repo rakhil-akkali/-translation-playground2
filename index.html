@@ -4,6 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joda | Where Fashion Finds Its Match</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Joda is India’s first community-driven digital wardrobe — digitize your closet, share or rent styles, and find your perfect fashion match in trusted communities.">
+  <meta name="keywords" content="Joda, wardrobe sharing, fashion sharing, fashion rental, circular fashion, sustainable fashion, Bangalore, Bengaluru, India">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Joda | Where Fashion Finds Its Match">
+  <meta property="og:description" content="Wear. Share. Match. Digitize your wardrobe, share within trusted circles, and find your style twin.">
+  <meta property="og:type" content="website">
+  <!-- Replace with your production URL once you know it -->
+  <meta property="og:url" content="https://your-site.vercel.app/">
+  <!-- Replace with a real image if you add one -->
+  <meta property="og:image" content="https://your-site.vercel.app/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Joda | Where Fashion Finds Its Match">
+  <meta name="twitter:description" content="Discover India’s first community-driven digital wardrobe — where you can digitize your closet, share or rent styles, and find your perfect fashion match.">
+  <meta name="twitter:image" content="https://your-site.vercel.app/og-image.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -389,7 +409,8 @@
       <h2>Be part of the first 1,000 members to try Joda.</h2>
       <p class="lead">We’re launching city-by-city, starting with Bengaluru. Join the early access list to unlock priority invites, exclusive perks, and community access.</p>
       <div class="waitlist">
-        <form>
+        <!-- Added id to hook JS handler -->
+        <form id="waitlist-form">
           <div>
             <label for="name">Name</label>
             <input id="name" name="name" type="text" placeholder="Your name" required>
@@ -489,5 +510,26 @@
     </div>
     <div>© 2025 Joda Labs. All rights reserved.</div>
   </footer>
+
+  <!-- Simple front-end waitlist handler -->
+  <script>
+    (function () {
+      const form = document.getElementById('waitlist-form');
+      if (!form) return;
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        // TODO: replace this with a real API call when backend is ready.
+        console.log('Waitlist submission:', data);
+
+        alert("You’re on the list! We’ll reach out when Joda launches in your city. 💜");
+        form.reset();
+      });
+    })();
+  </script>
 </body>
 </html>
