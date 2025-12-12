@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GiftEase | Corporate Gifting</title>
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "uk8v21m21e");
+  </script>
+  <style>
+    :root {
+      --primary: #2b6cb0;
+      --secondary: #0f172a;
+      --accent: #f59e0b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1200px, 92vw);
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    header {
+      background: radial-gradient(circle at 20% 20%, rgba(43, 108, 176, 0.15), transparent 40%),
+                  radial-gradient(circle at 80% 0%, rgba(245, 158, 11, 0.15), transparent 35%),
+                  var(--card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(8px);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 0;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(43, 108, 176, 0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 36px rgba(43, 108, 176, 0.3);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--secondary);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(43, 108, 176, 0.1);
+      color: var(--primary);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 4vw, 46px);
+      margin: 12px 0 16px;
+      line-height: 1.2;
+    }
+
+    p.lead {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0 0 24px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .trust-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      font-weight: 600;
+      color: var(--secondary);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+    }
+
+    .accent {
+      color: var(--primary);
+    }
+
+    section {
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(26px, 3vw, 32px);
+    }
+
+    .section-lead {
+      color: var(--muted);
+      margin-bottom: 24px;
+      max-width: 780px;
+    }
+
+    .problem {
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .problem p {
+      color: #cbd5e1;
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .pillar {
+      background: #fff;
+      padding: 18px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+    }
+
+    .pillar h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .feature-list, .steps, .testimonials {
+      display: grid;
+      gap: 14px;
+    }
+
+    .feature-list li {
+      list-style: none;
+      padding: 12px 14px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-weight: 600;
+      color: var(--secondary);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+    }
+
+    .feature-list li::before {
+      content: "✔";
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .steps {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .step {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+    }
+
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .logo-tile {
+      background: #fff;
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    blockquote {
+      margin: 0;
+      background: #fff;
+      padding: 18px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+    }
+
+    blockquote p {
+      margin: 0 0 10px;
+      font-style: italic;
+      color: var(--secondary);
+    }
+
+    blockquote footer {
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .pricing-teaser {
+      background: linear-gradient(135deg, rgba(43, 108, 176, 0.08), rgba(15, 23, 42, 0.05));
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .final-cta {
+      text-align: center;
+      padding: 48px 0;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 48px 0;
+    }
+
+    footer h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      display: block;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        position: static;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="padding: 12px 0;">
+      <nav>
+        <div class="logo">GIFTEASE <span>•</span> Corporate Gifting</div>
+        <div class="nav-actions">
+          <a class="btn btn-secondary" href="#pricing" data-track="nav-pricing">Pricing</a>
+          <a class="btn btn-primary" href="#demo" data-track="nav-book-demo">Book a Demo</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="padding-top: 64px;">
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Corporate gifting that feels personal — even at 10,000+ scale.</div>
+          <h1>AI-powered recommendations. Workflow automation. Pan-India delivery. Real-time analytics.</h1>
+          <p class="lead">GiftEase removes the chaos from corporate gifting so HR and sales teams can delight every recipient with zero hassle.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" id="demo" href="#final-cta" data-track="hero-book-demo">Book a Demo</a>
+            <a class="btn btn-secondary" href="#final-cta" data-track="hero-start-trial">Start Free Trial</a>
+          </div>
+          <div class="badge">95% on-time delivery across Tier 1/2/3</div>
+        </div>
+        <div>
+          <div class="trust-grid">
+            <div class="trust-card">Trusted by HR & Sales teams in India</div>
+            <div class="trust-card">Curated artisanal + branded gifts</div>
+            <div class="trust-card">Pan-India reach with SLA-backed delivery</div>
+            <div class="trust-card">Real-time analytics dashboard</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem">
+      <div class="container">
+        <h2>Gifting in India is broken.</h2>
+        <p class="section-lead">Managing corporate gifting is chaotic. Too many vendors. Generic gifts. Delayed deliveries. Endless follow-ups. HR and sales teams lose hours every month — and relationships still suffer. GiftEase fixes this.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Four pillars for effortless corporate gifting</h2>
+        <div class="pillars">
+          <div class="pillar">
+            <h3>🔹 Personalization at Scale</h3>
+            <p>AI recommends gifts based on recipient profile, location, and occasion.</p>
+          </div>
+          <div class="pillar">
+            <h3>🔹 Automated Workflows</h3>
+            <p>Birthdays. Anniversaries. Client milestones. Festivals. Set it once → GiftEase executes all year.</p>
+          </div>
+          <div class="pillar">
+            <h3>🔹 Pan-India Delivery</h3>
+            <p>SLA-backed delivery to 28,000+ pincodes across Tier 1, 2 & 3 cities.</p>
+          </div>
+          <div class="pillar">
+            <h3>🔹 Real-Time ROI Analytics</h3>
+            <p>Track delivery success, engagement impact, and gifting budget usage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Everything you need in one platform.</h2>
+        <ul class="feature-list">
+          <li>Curated catalog of artisanal + branded gifts</li>
+          <li>Budget control & approval flows</li>
+          <li>CRM/HRMS integrations</li>
+          <li>Bulk or individual gifting</li>
+          <li>Branded packaging options</li>
+          <li>Festival campaign automations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>How it works — 3 simple steps</h2>
+        <div class="steps">
+          <div class="step">
+            <h3>Step 1 — Connect your CRM/HRMS</h3>
+            <p>Sync employee or client data in minutes.</p>
+          </div>
+          <div class="step">
+            <h3>Step 2 — Automate gifting workflows</h3>
+            <p>Choose occasions → Set budgets → Pick catalogs → Go live.</p>
+          </div>
+          <div class="step">
+            <h3>Step 3 — Track impact</h3>
+            <p>Monitor delivery, costs, and engagement on a single dashboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Trusted by modern teams</h2>
+        <div class="logos">
+          <div class="logo-tile">TechFirm</div>
+          <div class="logo-tile">FinCorp</div>
+          <div class="logo-tile">ConsultCo</div>
+          <div class="logo-tile">HealthPlus</div>
+          <div class="logo-tile">EduWave</div>
+          <div class="logo-tile">RetailOne</div>
+        </div>
+        <div class="testimonials">
+          <blockquote>
+            <p>“GiftEase saved us over 150 hours during Diwali gifting.”</p>
+            <footer>— HR Manager, IT Enterprise</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Clients loved the personalized gifts — our renewal rate improved.”</p>
+            <footer>— Director of Sales, BFSI</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Finally a gifting partner that delivers reliably to tier-3 cities.”</p>
+            <footer>— Procurement Lead, Pharma</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="pricing-teaser">
+          <h2>Pricing that fits every team</h2>
+          <p class="section-lead">Simple subscription + per-gift pricing. Fits teams of all sizes — from startups to large enterprises.</p>
+          <a class="btn btn-primary" href="#final-cta" data-track="pricing-request">Request Pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="final-cta">
+      <div class="container final-cta">
+        <h2>Ready to transform your corporate gifting?</h2>
+        <p class="section-lead" style="margin: 0 auto 24px;">Personalized. Automated. Delivered anywhere.</p>
+        <div class="cta-row" style="justify-content: center;">
+          <a class="btn btn-primary" href="#demo" data-track="final-book-demo">Book a Demo</a>
+          <a class="btn btn-secondary" href="#demo" data-track="final-start-trial">Start 30-Day Free Trial</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>Product</h4>
+        <a href="#">Features</a>
+        <a href="#">Catalog</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Help Center</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.giftEaseDataLayer = window.giftEaseDataLayer || [];
+
+    function trackEvent(eventName, detail = {}) {
+      const payload = {
+        event: eventName,
+        timestamp: new Date().toISOString(),
+        ...detail,
+      };
+
+      window.giftEaseDataLayer.push(payload);
+      if (console && console.debug) {
+        console.debug("GiftEase tracking", payload);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      trackEvent("page_view", { page: "landing" });
+
+      document.querySelectorAll("[data-track]").forEach((element) => {
+        element.addEventListener("click", () => {
+          trackEvent("cta_click", { target: element.dataset.track });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
