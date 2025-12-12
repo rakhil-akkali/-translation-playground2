@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GiftEase | Corporate Gifting</title>
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "uk8v21m21e");
+  </script>
   <style>
     :root {
       --primary: #2b6cb0;
@@ -360,8 +372,8 @@
       <nav>
         <div class="logo">GIFTEASE <span>•</span> Corporate Gifting</div>
         <div class="nav-actions">
-          <a class="btn btn-secondary" href="#pricing">Pricing</a>
-          <a class="btn btn-primary" href="#demo">Book a Demo</a>
+          <a class="btn btn-secondary" href="#pricing" data-track="nav-pricing">Pricing</a>
+          <a class="btn btn-primary" href="#demo" data-track="nav-book-demo">Book a Demo</a>
         </div>
       </nav>
     </div>
@@ -375,8 +387,8 @@
           <h1>AI-powered recommendations. Workflow automation. Pan-India delivery. Real-time analytics.</h1>
           <p class="lead">GiftEase removes the chaos from corporate gifting so HR and sales teams can delight every recipient with zero hassle.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" id="demo" href="#final-cta">Book a Demo</a>
-            <a class="btn btn-secondary" href="#final-cta">Start Free Trial</a>
+            <a class="btn btn-primary" id="demo" href="#final-cta" data-track="hero-book-demo">Book a Demo</a>
+            <a class="btn btn-secondary" href="#final-cta" data-track="hero-start-trial">Start Free Trial</a>
           </div>
           <div class="badge">95% on-time delivery across Tier 1/2/3</div>
         </div>
@@ -489,7 +501,7 @@
         <div class="pricing-teaser">
           <h2>Pricing that fits every team</h2>
           <p class="section-lead">Simple subscription + per-gift pricing. Fits teams of all sizes — from startups to large enterprises.</p>
-          <a class="btn btn-primary" href="#final-cta">Request Pricing</a>
+          <a class="btn btn-primary" href="#final-cta" data-track="pricing-request">Request Pricing</a>
         </div>
       </div>
     </section>
@@ -499,8 +511,8 @@
         <h2>Ready to transform your corporate gifting?</h2>
         <p class="section-lead" style="margin: 0 auto 24px;">Personalized. Automated. Delivered anywhere.</p>
         <div class="cta-row" style="justify-content: center;">
-          <a class="btn btn-primary" href="#demo">Book a Demo</a>
-          <a class="btn btn-secondary" href="#demo">Start 30-Day Free Trial</a>
+          <a class="btn btn-primary" href="#demo" data-track="final-book-demo">Book a Demo</a>
+          <a class="btn btn-secondary" href="#demo" data-track="final-start-trial">Start 30-Day Free Trial</a>
         </div>
       </div>
     </section>
@@ -533,5 +545,31 @@
       </div>
     </div>
   </footer>
+  <script>
+    window.giftEaseDataLayer = window.giftEaseDataLayer || [];
+
+    function trackEvent(eventName, detail = {}) {
+      const payload = {
+        event: eventName,
+        timestamp: new Date().toISOString(),
+        ...detail,
+      };
+
+      window.giftEaseDataLayer.push(payload);
+      if (console && console.debug) {
+        console.debug("GiftEase tracking", payload);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      trackEvent("page_view", { page: "landing" });
+
+      document.querySelectorAll("[data-track]").forEach((element) => {
+        element.addEventListener("click", () => {
+          trackEvent("cta_click", { target: element.dataset.track });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
